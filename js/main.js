@@ -56,12 +56,12 @@ function validate(ele) {
     };
     
     if (regex[ele.id].test(ele.value)) {
-        console.log('match');
+        // console.log('match');
         ele.classList.remove('is-invalid');
         ele.classList.add('is-valid');
         return true;
     } else {
-        console.log('no match');
+        // console.log('no match');
         ele.classList.remove('is-valid');
         ele.classList.add('is-invalid');
         return false;
